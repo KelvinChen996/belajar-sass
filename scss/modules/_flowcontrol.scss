@@ -1,0 +1,70 @@
+@use 'submodules/mixin' as m;
+.square-profile{
+    @include m.profile-pic(200px,$circle:false );
+}
+.circle-profile{
+    @include m.profile-pic(80px,$circle:true );
+}
+
+//else
+.nav{
+    @include m.color-mode($light-mode: false);
+}
+
+// else if
+.right{
+    @include m.triangle(2em,black ,right )
+}
+
+
+$color:blue;
+.gradient{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    // li:nth-child(1) anak ke 1 berubah
+
+    //FOR
+    // @for $i from 1 to 11 {// index mulai dari 1 sampai 10
+    //     li:nth-child(#{$i}){
+    //         padding: 4px;
+    //         background-color: lighten($color, $i * 2%);
+    //     } 
+    // }
+
+    //WHILE
+    // $i : 1;
+    // @while $i < 11 {
+    //     li:nth-child(#{$i}){
+    //         padding: 4px;
+    //         background-color: lighten($color, $i * 3%);
+    //     } 
+    //     $i: $i + 1;
+    // }
+    //EACH
+}
+
+//each
+$social-colors: (
+    youtube: #ff0000,
+    facebook: #3b5998,
+    twitter: #1da1f2,
+    instagram: #ffbf34,
+    twitch: #8134af,
+);
+
+.youtube{
+    color: #ff0000;
+}
+
+.socials{
+    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    @each $social,$color in $social-colors {
+        // untuk setiap element yang namanya social
+        .#{$social}{
+            color: $color;
+        }
+    }
+}

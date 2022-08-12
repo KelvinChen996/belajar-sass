@@ -17,3 +17,56 @@
     align-items: center;
     flex-direction: $direction
 }
+
+//if
+@mixin profile-pic($size, $circle : false){
+    width: $size;
+    height: $size;
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px rgba($color:#000, $alpha:0.3);
+
+    @if $circle{
+        border-radius: 50%;
+    }
+}
+
+//else
+$light-bg : #eaeaea;
+$light-text: #333;
+$dark-bg : #999;
+$dark-text : #ddd;
+@mixin color-mode($light-mode:true){
+    @if $light-mode{
+        background-color: $light-bg;
+        color: $light-text;
+    }
+    @else{
+        background-color: $dark-bg;
+        color: $dark-text;
+    }
+}
+
+@mixin triangle($size, $color, $direction) {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    background-color: transparent;
+    border-style: solid;
+    border-width: $size ;
+
+    // border-right-color: black;
+    // border-left-color: #ddd;
+    // border-top-color: salmon;
+    // border-bottom-color: lightblue;
+
+    @if $direction == up {
+        border-bottom-color: $color;
+    }@else if $direction == right{
+        border-left-color: $color;
+    }@else if $direction == down{
+        border-top-color: $color;
+    }@else{//direction left
+        border-right-color: $color;
+    }
+    
+}

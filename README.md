@@ -33,6 +33,25 @@ prefix=C:\Users\User\AppData\Roaming\npm
 6. npm install -g sass
 7. sass; jika muncul versi sass maka uda pake versi DART SASS
 8. Ubah @import jadi pake @use. Cara jalankan :
-$ sass scss/main.scss css/main.css
+```$ sass scss/main.scss css/main.css```
+9. (Built-in Modules)[https://sass-lang.com/documentation/modules]
+   - Color
+      - adjust
+      - complement
+      - darken
+      - lighten
+      - saturate
+      - desaturate
+      - grayscale
+      - mix
+      - fade-in
+      - fade-out
+   - List
+   - Map
+   - Math
+   - Meta
+   - Selector
+   - String
+
 
         

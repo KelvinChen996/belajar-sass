@@ -5,6 +5,8 @@ Note:
 4. <!-- ul>li*5>a{Link $} -->
 5. <!-- Alt Shift bawah copy kebawah -->
 6. File scss yang ada underscore itu merupakan module
+7. ul.socials>li{http://youtube.com/kelvinchen}
+8. INTERPOLASI .#{$social} -> class social ->_flowcontrol.scss 
 Masalah :
 1. Buat Folder CSS masih error Solver
 
@@ -30,5 +32,28 @@ prefix=C:\Users\User\AppData\Roaming\npm
     - C:\Program Files\Git\bin;C:\Windows\system32
 6. npm install -g sass
 7. sass; jika muncul versi sass maka uda pake versi DART SASS
-
+8. Ubah @import jadi pake @use. Cara jalankan :
+$ sass scss/main.scss css/main.css
         
+1. Built-in Modules:
+Color
+List
+Map
+Math
+Meta
+Selector
+String
+
+https://sass-lang.com/documentation/modules
+
+2. Color :
+adjust
+complement
+darken
+lighten
+saturate
+desaturate
+grayscale
+mix
+fade-in
+fade-out
