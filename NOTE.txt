@@ -1,6 +1,4 @@
-# belajar-sass
-
-## Note:
+Note:
 1. SASS : Syntactically Awesome Style Sheets
 2. WPU SASS| 2 Nesting -> 5:20 Preference Setting
 3. File -> Preferences -> Settings -> cari live sass compiler, "savePath": "~/../css/" | CTRL + ,

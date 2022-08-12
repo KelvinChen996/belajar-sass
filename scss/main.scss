@@ -1,0 +1,116 @@
+// .main{
+//     background-color: lightblue;
+//     .main-heading{
+//         font-size: 2em;
+//     }
+//     .main-paragraph{
+//         font-size: 1.4em;
+//     }
+// }
+
+// .main,
+// footer {
+//     h1,
+//     p {
+//         letter-spacing: 1px;
+//     }
+// }
+
+// &
+// Parent selector
+
+// .main{
+//     //berada diatas element main atau disebut parent (akses parent)
+//     .container &{
+//         background-color: lightblue;
+//     }
+//     .main-heading{
+//         font-size: 2em;
+//     }
+//     &:hover{
+//         background-color: salmon;
+//     }
+// }
+
+
+//Rekomendasi
+// .main{
+//     //interpolasi
+//     #{&}-heading{
+//         font-size: 2em;
+//     }
+//     #{&}-paragraph{
+//         font-size: 1.4em;
+//     }
+// }
+
+// // Cara lama
+// .footer{
+//     & &-heading{
+//         font-size: 2em;
+//     }
+//     & &-paragraph{
+//         font-size: 1.4em;
+//     }
+// }
+
+
+// ====
+// $secondary-color : #f2cc8f;
+// $text-color : #e07a5f;
+// $primary-color:green;
+
+// body{
+//     $primary-color: #f4f1de !global;
+//     background-color: $primary-color;
+// }
+
+// h1{
+//     color: $primary-color;// ikut global lokal
+// }
+
+// // 3. Variabel
+// $alert :(
+//     'danger':red,
+//     'success':green,
+//     'warning':orange,
+// );
+
+// h1{
+//     color: map-get($alert,'danger');
+// }
+
+//4. @mixin dan @include
+
+//Result
+// .header ul, .footer ul{
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+// .header ul li,
+// .footer ul li{
+//     display: inline-block;
+// }
+
+// .header ul li{
+//     display: inline-block;
+// }
+
+// .footer ul li{
+//     display: inline-block;
+// }
+
+// Simple mixin
+//otomatis cari yg _modul _mixin.scss
+
+//Argumen pada mixin
+
+//5. MODULES
+//keyword @import and @use
+
+@import 'modules/mixin';
+@import 'modules/header';
+@import 'modules/container';
+@import 'modules/footer';

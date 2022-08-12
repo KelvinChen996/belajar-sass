@@ -1,0 +1,11 @@
+.header ul{
+    @include inline-list();
+    li{
+        background-color: black;
+        padding: 1.5em;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    } 
+}
