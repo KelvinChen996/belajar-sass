@@ -32,5 +32,7 @@ prefix=C:\Users\User\AppData\Roaming\npm
     - C:\Program Files\Git\bin;C:\Windows\system32
 6. npm install -g sass
 7. sass; jika muncul versi sass maka uda pake versi DART SASS
+8. Ubah @import jadi pake @use. Cara jalankan :
+$ sass scss/main.scss css/main.css
 
         
