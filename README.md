@@ -4,8 +4,8 @@
 1. SASS : Syntactically Awesome Style Sheets
 2. WPU SASS| 2 Nesting -> 5:20 Preference Setting
 3. File -> Preferences -> Settings -> cari live sass compiler, "savePath": "~/../css/" | CTRL + ,
-4. <!-- ul>li*5>a{Link $} -->
-5. <!-- Alt Shift bawah copy kebawah -->
+4. ul>li*5>a{Link $} : shortcut buat elemet ul didalamnya ada 5 element li dibungkus a
+5. Alt Shift bawah : copy element kebawah
 6. File scss yang ada underscore itu merupakan module
 Masalah :
 1. Buat Folder CSS masih error Solver
